@@ -1,5 +1,5 @@
 module.exports = function(app, db) {
-  app.get('/recipes', (req, res) => {
+  app.get('/', (req, res) => {
     db.collection('food_recipes').find({}).toArray(function (err, result) {
         if (err) {
           console.log(err,'err');
