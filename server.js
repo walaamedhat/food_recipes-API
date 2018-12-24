@@ -2,7 +2,7 @@ require('env2')('./config.env');
 const express     = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const bodyParser  = require('body-parser');
-const db          = process.env.DB;
+const db          = process.env.DB2;
 
 const app         = express();
 
